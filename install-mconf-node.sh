@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# THIS SCRIPT IS DEPRECIATED, SEE http://code.google.com/p/mconf/wiki/MconfLive
 
 function print_usage
 {
@@ -11,7 +10,7 @@ function print_usage
 
 if [ `lsb_release --description | grep 'Ubuntu 10.04' | wc -l` -eq 0 ]
 then
-    echo "A Mconf node MUST BE a fresh installation of Ubuntu 10.04 Server"
+    echo "MUST BE a fresh installation of Ubuntu 10.04 Server"
     exit 1
 fi
 
