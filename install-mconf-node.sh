@@ -38,7 +38,7 @@ then
     git pull origin master
     cd ..
 else
-    git clone git://github.com/mconf/installation-scripts.git
+    git clone git://github.com/mrquangquynh/installation-scripts.git
 fi
 cd installation-scripts/bbb-deploy/
 
