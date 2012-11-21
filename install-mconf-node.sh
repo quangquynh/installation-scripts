@@ -46,18 +46,5 @@ chmod +x install-bigbluebutton.sh
 ./install-bigbluebutton.sh
 sudo bbb-conf --setip $1
 
-chmod +x install-notes.sh
-./install-notes.sh
-
-VERSION=$(curl http://mconf.org:8888/mconf-node/current.txt)
-wget -O bigbluebutton.zip "http://mconf.org:8888/mconf-node/$VERSION"
-sudo ant -f deploy_target.xml deploy
-
-chmod +x mconf-presentation.sh
-./mconf-presentation.sh
-
-chmod +x enable-mobile-fs.sh
-./enable-mobile-fs.sh
-
 echo "Restart the server to finish the installation"
 echo "It will take a while to start the live notes server, please be patient"
