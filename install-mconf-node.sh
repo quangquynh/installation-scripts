@@ -26,7 +26,7 @@ then
 fi
 
 echo "Updating the Ubuntu package repository"
-sudo apt-get update > /dev/null
+
 sudo apt-get -y install git-core htop iftop ant curl
 
 mkdir -p ~/tools
