@@ -41,8 +41,8 @@ else
 fi
 cd installation-scripts/bbb-deploy/
 
-chmod +x install-bigbluebutton.sh
-./install-bigbluebutton.sh
+chmod +x install-bigbluebutton0.80.sh
+./install-bigbluebutton0.80.sh
 sudo bbb-conf --setip $1
 
 echo "Restart the server to finish the installation"
